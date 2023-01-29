@@ -1,11 +1,10 @@
-mod grid;
 mod party;
+mod grid;
 
-use grid::Grid;
+use party::Party;
 
 fn main() {
     println!("Hello, world!");
-    let grid = Grid::new();
-    grid.display_grid();
-    grid.check_win();
+    let party = Party::new();
+    party.start();
 }
